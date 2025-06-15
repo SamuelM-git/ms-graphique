@@ -2,7 +2,7 @@
 
 # Les bibliotheques
 import streamlit as st
-import matplotlib.plotly as plt
+import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 # Pour blocage matplotlib

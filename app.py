@@ -2,7 +2,7 @@
 
 # Les bibliotheques
 import streamlit as st
-import matplotlib.pyplot as plt
+import matplotlib as plt
 import seaborn as sns
 import pandas as pd
 
@@ -20,7 +20,7 @@ st.header("Manipulation de données et création de graphiques", divider=True)
 liste_data = sns.get_dataset_names()
 
 st.write("Bonjour, nous avons actuellement une liste de ", len(liste_data),
-         "dataset(s)")
+         "dataset(s) test")
 # On recupere le choix de l'utilisateur
 choix = st.selectbox("Lequel veux-tu utiliser ?", liste_data)
 # On telecharge le dataset choisi

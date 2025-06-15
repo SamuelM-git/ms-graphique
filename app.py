@@ -5,10 +5,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-# Pour blocage matplotlib
-from threading import RLock
-
-_lock = RLock()
 
 # Titre principal de l'application (affiché en haut de la page)
 # On utilise le html pour pouvoir centrer le texte
@@ -75,10 +71,9 @@ if affiche_matrice:
         st.header('Ma matrice de corrélation')
         corr_df = choix[[choix_colonne_x, choix_colonne_y]].corr(
             method="pearson")
-        with _lock:
-            plt.figure(figsize=(8, 6))
-            sns.heatmap(corr_df, annot=True)
-            st.pyplot(plt)
+        plt.figure(figsize=(8, 6))
+        sns.heatmap(corr_df, annot=True)
+        st.pyplot(plt)
         st.balloons()
     else:
         st.snow()

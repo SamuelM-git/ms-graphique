@@ -2,7 +2,7 @@
 
 # Les bibliotheques
 import streamlit as st
-# import matplotlib.plotly as plt
+import matplotlib.plotly as plt
 import seaborn as sns
 import pandas as pd
 
@@ -72,9 +72,9 @@ if affiche_matrice:
         st.header('Ma matrice de corrélation')
         corr_df = choix[[choix_colonne_x, choix_colonne_y]].corr(
             method="pearson")
-        # plt.figure(figsize=(8, 6))
+        plt.figure(figsize=(8, 6))
         sns.heatmap(corr_df, annot=True)
-        # st.pyplot(plt)
+        st.pyplot(plt)
         st.balloons()
     else:
         st.snow()

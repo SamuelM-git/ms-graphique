@@ -1,8 +1,8 @@
 
 
 
-matplotlib==3.10.3
-matplotlib-inline==0.1.7
+matplotlib
+matplotlib-inline
 pandas==2.2.3
 
 seaborn==0.13.2

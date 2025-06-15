@@ -19,7 +19,7 @@ st.header("Manipulation de données et création de graphiques", divider=True)
 liste_data = sns.get_dataset_names()
 
 st.write("Bonjour, nous avons actuellement une liste de ", len(liste_data),
-         "dataset(s) test")
+         "dataset(s)")
 # On recupere le choix de l'utilisateur
 choix = st.selectbox("Lequel veux-tu utiliser ?", liste_data)
 # On telecharge le dataset choisi
@@ -84,3 +84,5 @@ st.write('___')
 
 st.write("<h7 style='text-align: center; color: green;'>© 2025 Samuel M. All"
          "rights reserved.🦁</h7>", unsafe_allow_html=True)
+
+st.link_button("LinkedIn", "www.linkedin.com/in/samuel-m-co")

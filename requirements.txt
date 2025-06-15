@@ -3,12 +3,12 @@
 
 matplotlib
 matplotlib-inline
-pandas==2.2.3
+pandas
 
-seaborn==0.13.2
+seaborn
 
-streamlit==1.45.1
-streamlit-searchbox==0.1.22
-streamlit_carousel==1.1.2
+streamlit
+streamlit-searchbox
+streamlit_carousel
 
 

@@ -85,4 +85,4 @@ st.write('___')
 st.write("<h7 style='text-align: center; color: green;'>© 2025 Samuel M. All"
          "rights reserved.🦁</h7>", unsafe_allow_html=True)
 
-st.link_button("LinkedIn", "www.linkedin.com/in/samuel-m-co")
+st.link_button("LinkedIn", "https://www.linkedin.com/in/samuel-m-co")

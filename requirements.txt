@@ -1,11 +1,14 @@
-#For github just leave the main name of the dependecies
-#Core dependecies
-#pip install pandas
-pandas
-#pip install streamlit
-streamlit
-#pip install seaborn
-seaborn
-#pip install matplotlib
-matplotlib
+
+
+
+matplotlib==3.10.3
+matplotlib-inline==0.1.7
+pandas==2.2.3
+
+seaborn==0.13.2
+
+streamlit==1.45.1
+streamlit-searchbox==0.1.22
+streamlit_carousel==1.1.2
+
 
